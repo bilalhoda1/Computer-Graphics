@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Reflex Game </title>
+
+			<script id="vertex-shader" type="x-shader/x-vertex">
+			attribute vec4 vPosition;
+			attribute vec4 vColour;
+			varying vec4 pointColor;
+
+			void
+			main()
+			{
+				gl_Position = vPosition;
+				gl_PointSize = 1.0;
+				pointColor = vColour;
+			}
+			</script>
+
+			<script id="fragment-shader" type="x-shader/x-fragment">
+			precision mediump float;
+			varying vec4 pointColor;
+
+			void
+			main()
+			{
+				gl_FragColor = pointColor; //vec4(1.0, 0.0, 1.0, 1.0); 
+			}
+			</script>
+
+			<script type="text/javascript" src="https://www.cs.unm.edu/~angel/BOOK/INTERACTIVE_COMPUTER_GRAPHICS/SEVENTH_EDITION/CODE/Common/webgl-utils.js"></script>
+			<script type="text/javascript" src="https://www.cs.unm.edu/~angel/BOOK/INTERACTIVE_COMPUTER_GRAPHICS/SEVENTH_EDITION/CODE/Common/initShaders.js"></script>
+			<script type="text/javascript" src="https://www.cs.unm.edu/~angel/BOOK/INTERACTIVE_COMPUTER_GRAPHICS/SEVENTH_EDITION/CODE/Common/MV.js"></script>
+			<script type="text/javascript" src="reflex.js"></script>
+	</head>
+	
+	<body>
+	<label id="score-label" for="score-count" style="font-size:20px" > Score: </label>
+	<output id="score-count" style="font-size:20px" > </output></br>
+	
+	<label id="time-label" for="time-left" style="font-size:20px" > Time Left: </label>
+	<output id="time-left" style="font-size:20px" > </output>
+	
+	<p align="middle">
+		<button onclick="init()" class="favorite styled" type="button">
+			Play!
+		</button>
+		<button id="quit-button" class="favorite styled" type="button">
+			Quit
+		</button>
+		<canvas id="gl-canvas" width="640" height="480" style="border:5px solid #000080;" >	
+			Oops ... your browser doesn't support the HTML5 canvas element
+		</canvas>
+	</p>
+	</body>
+</html>

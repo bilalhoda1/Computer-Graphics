@@ -1,0 +1,18 @@
+,,F - Unaccpetable,C - Satisfactory,B - Good,A - Excellent
+Problem,Points,[0-60),[60-70),[70-85),[85-100]
+Correctness,,,,,
+Colors,10,The triangle does not display or there are no clearly identifiable means of interacting with the triangle.,"The triangle displays, interactive controls are clearly identifiable. There are many (4 or more) bugs in the triangle's response to the controls.","The triangle displays, interactive controls are clearly identifiable. There are a few (1 to 3) bugs in the triangle's response to the controls.",The triangle's boundary and interior can be configured independently. Both flat and smooth shading are implemented correctly for each.
+Tetrix,15,The tetrix is not rendered correctly or there is no clearly identifiable way to specify the recursion level or rotation axis.,"The tetrix renders correctly, with depth buffering, and centered at the origin. Controls are clearly specified, but does not rotate.","The tetrix renders correctly, with depth buffering, and centered at the origin. Controls are clearly specified, the tetrix rotates but interaction/rotation is buggy.","The tetrix renders correctly, with depth buffering, and centered at the origin. Controls are clearly specified, the tetrix responds correctly to the specified controls."
+Galore,20,Points do not appear when the mouse is clicked or appear at incorrect locations.,There are many (4 or more) bugs in the functionality described in the A category.,There are a few (1 to 3) bugs in the functionality described in the A category.,"Points appear correctly, all previous polygons stay on screen, the modes are implemeneted correctly, as are Reset and Toggle, every new polygon is shaded with a random color."
+Reflex,25,The polygon does not appear or does not randomly change position after a time interval.,There are many (4 or more) bugs in the functionality described in the A category.,There are a few (1 to 3) bugs in the functionality described in the A category.,The polygon correctly changes position and responds to mouse clicks. Score is correctly tracked and the game terminates correctly.
+Reflex - bonus - appearance,2,,,,The polygon's shape and color change between appearances.
+Reflex - bonus - game speed,2,,,,Game speed is adaptive.
+Reflex - bonus - score,2,,,,The current score is correctly displayed on the page.
+Reflex - bonus - timer,4,,,,A timer visibly counts down from a minute. The game ends when the timer reaches 0 if it has not already ended.
+Quality,,,,,
+Modularity,10,The code contains one long init function.,,The code is occasionally divided into functions. Some functions are long.,"The code is modular - it consists of short, atomic functions. New functions are introduced and called to ensure modularity."
+Documentation,10,There are no comments.,"There is an excess of comments, e.g. a comment per line, in at least some portions of the code.",Only some portions are well commented.,The code is not overly commented. Logical blocks of code are consistenly preceded by helpful comments.
+Style and Readability,10,The code is a random jumble of characters. I hope I never have to see anything like this ever again in my life.,,Only some portions of the code exhibit good style. Some lines are longer than 80 characters. Comments have a haphazard style.,"All variables have meaningful names. There is a consistent, pleasing style regarding whitespace, naming, braces, and comments. All lines are within 80 characters."
+,,,,,
+,,,,,
+Total,100,,,,

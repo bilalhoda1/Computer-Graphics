@@ -1,0 +1,95 @@
+<!--Used Basem's code as the base file-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+<title>Colors</title>
+<script type="text/javascript" src="https://www.cs.unm.edu/~angel/BOOK/INTERACTIVE_COMPUTER_GRAPHICS/SEVENTH_EDITION/CODE/Common/webgl-utils.js"></script>	<!-- Contains utilities needed to create the WEBGL canvas object -->
+<script type="text/javascript" src="https://www.cs.unm.edu/~angel/BOOK/INTERACTIVE_COMPUTER_GRAPHICS/SEVENTH_EDITION/CODE/Common/initShaders.js"></script> 	<!-- Contains the code to read, compile and link shaders -->
+<script type="text/javascript" src="https://www.cs.unm.edu/~angel/BOOK/INTERACTIVE_COMPUTER_GRAPHICS/SEVENTH_EDITION/CODE/Common/MV.js"></script> 				<!-- For matrix/vector manipulation; Convenience -->
+<script type="text/javascript" src="colors.js"></script>
+
+<script id="vertex-shader" type="x-shader/x-vertex">
+attribute vec4 vPosition;
+attribute vec4 vColor;
+varying vec4 color;
+void main()
+{
+
+	gl_Position = vPosition;
+	color = vColor;
+}
+</script>
+<script id="fragment-shader" type="x-shader/x-fragment">
+precision mediump float;
+varying vec4 color;
+void main()
+{
+	gl_FragColor = color;
+}
+</script>
+
+</head>
+
+<body>
+    <!--canvas-->
+    <canvas id = "gl-canvas" width="500" height="500">
+    Oops ... your browser doesn't support the HTML5 canvas element
+    </canvas>
+
+    <!--Toggle Boundary Check box-->
+    <div>
+        <input type="checkbox" id="boundary" onclick="toggleBoundary()">
+        <label for="boundary">Toggle Boundary</label>
+    </div>
+
+    <!--Toggle Interior Check box-->
+    <div>
+        <input type="checkbox" id="interior" onclick="toggleInterior()" checked>
+        <label for="interior">Toggle Interior</label>
+    </div>
+
+    <!--Toggle Interpolate Check box-->
+    <div>
+        <input type="checkbox" id="interpolate" onclick="toggleInterpolation()">
+        <label for="interpolate">Interpolate</label>
+    </div>
+
+    <!--RGB for left vertex-->
+    <div>
+        <h4>Left Vertex:</h4>
+        <label>Red</label><br>
+        0 <input type="range" min="0" max="255" value="255" class="slider" id="redVertex1" oninput="interpolateVertex1(this.value,'r')"/>255<br>
+        <label>Green</label><br>    
+        0 <input type="range" min="0" max="255" value="0" class="slider" id="greenVertex1" oninput="interpolateVertex1(this.value,'g')"/>255<br>
+        <label>Blue</label><br>
+        0 <input type="range" min="0" max="255" value="0" class="slider" id="blueVertex1" oninput="interpolateVertex1(this.value,'b')"/>255<br>
+    </div>
+
+    <!--RGB for right vertex-->
+    <div>
+        <h4>Right Vertex:</h4> 
+        <label>Red</label><br>   
+        0 <input type="range" min="0" max="255" value="255" class="slider" id="redVertex2" oninput="interpolateVertex2(value,'r')"/>255<br>
+        <label>Green</label><br>    
+        0 <input type="range" min="0" max="255" value="0" class="slider" id="greenVertex2" oninput="interpolateVertex2(value,'g')"/>255<br>
+        <label>Blue</label><br>
+        0 <input type="range" min="0" max="255" value="0" class="slider" id="blueVertex2" oninput="interpolateVertex2(value,'b')"/>255<br>
+    </div>
+
+    <!--RGB for top vertex-->
+    <div>
+        <h4>Top Vertex:</h4>
+        <label>Red</label><br>   
+        0 <input type="range" min="0" max="255" value="255" class="slider" id="redVertex3" oninput="interpolateVertex3(value,'r')"/>255<br>
+        <label>Green</label><br>        
+        0 <input type="range" min="0" max="255" value="0" class="slider" id="greenVertex3" oninput="interpolateVertex3(value,'g')"/>255<br>
+        <label>Blue</label><br>    
+        0 <input type="range" min="0" max="255" value="0" class="slider" id="blueVertex3" oninput="interpolateVertex3(value,'b')"/>255<br>
+    </div>
+
+
+</body>
+</html>
+
+<!--Note: the oninput function is called whenever the value of the slider is changed. Two values are passed for interpolation. The -->

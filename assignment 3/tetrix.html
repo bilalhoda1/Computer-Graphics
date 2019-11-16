@@ -1,0 +1,65 @@
+<!--Used Basem's code as the base file-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+	<title>Tetrix</title>
+	<script id="vertex-shader" type="x-shader/x-vertex">
+	attribute vec3 vPosition;
+	attribute vec3 vColor;
+	uniform mat4 vRotation; // 
+	varying vec4 color;
+
+	void main()
+	{
+		gl_Position = vRotation * vec4(vPosition, 1.0);
+		color = vec4(vColor, 1.0);
+	}
+	</script>
+
+	<script id="fragment-shader" type="x-shader/x-fragment">
+	precision mediump float;
+	
+	varying vec4 color;
+
+	void main()
+	{
+		gl_FragColor = color;
+	}
+	</script>
+	<script type="text/javascript" src="https://www.cs.unm.edu/~angel/BOOK/INTERACTIVE_COMPUTER_GRAPHICS/SEVENTH_EDITION/CODE/Common/webgl-utils.js"></script>	<!-- Contains utilities needed to create the WEBGL canvas object -->
+	<script type="text/javascript" src=https://www.cs.unm.edu/~angel/BOOK/INTERACTIVE_COMPUTER_GRAPHICS/SEVENTH_EDITION/CODE/Common/initShaders.js></script> 	<!-- Contains the code to read, compile and link shaders -->
+	<script type="text/javascript" src="https://www.cs.unm.edu/~angel/BOOK/INTERACTIVE_COMPUTER_GRAPHICS/SEVENTH_EDITION/CODE/Common/MV.js"></script> 				<!-- For matrix/vector manipulation; Convenience -->
+	<script type="text/javascript" src="tetrix.js"></script>
+</head>   
+
+<body>
+
+	<!--slider to control subdivisions-->
+    <div>
+	&nbsp;<span class="style1">Subdivisions:</span> &nbsp;&nbsp;&nbsp;&nbsp; 
+    1 <input id="slider_divisions" type="range"
+	 min="0" max="6" step="1" value="1" /> 6	
+    </div>
+
+	<div >
+	<p>&nbsp;</p>
+	<!--controls x rotation-->
+	<button id="button_rotate_x">X Rotation</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<p>&nbsp;</p>
+	<!--controls y rotation-->
+	<button id="button_rotate_y">Y Rotation</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<p>&nbsp;</p>
+	<!--controls z rotation-->
+	<button id="button_rotate_z">Z Rotation</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	</div>
+
+    <!--canvas-->
+    <div>
+	<canvas id="gl-canvas" width="512" height="512">
+	Oops ... your browser doesn't support the HTML5 canvas element
+	</canvas>
+	</div>
+
+</body>
+</html>
