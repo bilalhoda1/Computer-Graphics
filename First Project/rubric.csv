@@ -1,0 +1,20 @@
+Submission,,0,1,2,3
+Notes are included in the README.,5,,,,
+Correctness,,,,,
+A random terrain is visible.,10,The requirement is not met.,The requirements is only partially met or it is met but there are many bugs.,"The requirement is met but there are a few, no more than 2, bugs.",The requirement is fully met.
+A flyby view of the terrain is implemented.,10,The requirement is not met.,The requirements is only partially met or it is met but there are many bugs.,"The requirement is met but there are a few, no more than 2, bugs.",The requirement is fully met.
+Variable view parameters,10,The requirement is not met.,The requirements is only partially met or it is met but there are many bugs.,"The requirement is met but there are a few, no more than 2, bugs.",The requirement is fully met.
+Infinite terrain,10,The requirement is not met.,The requirements is only partially met or it is met but there are many bugs.,"The requirement is met but there are a few, no more than 2, bugs.",The requirement is fully met.
+Variable plane speed,5,The requirement is not met.,The requirements is only partially met or it is met but there are many bugs.,"The requirement is met but there are a few, no more than 2, bugs.",The requirement is fully met.
+Variable yaw,5,The requirement is not met.,The requirements is only partially met or it is met but there are many bugs.,"The requirement is met but there are a few, no more than 2, bugs.",The requirement is fully met.
+Variable pitch,5,The requirement is not met.,The requirements is only partially met or it is met but there are many bugs.,"The requirement is met but there are a few, no more than 2, bugs.",The requirement is fully met.
+Variable roll,5,The requirement is not met.,The requirements is only partially met or it is met but there are many bugs.,"The requirement is met but there are a few, no more than 2, bugs.",The requirement is fully met.
+Constrained altitude,5,The requirement is not met.,The requirements is only partially met or it is met but there are many bugs.,"The requirement is met but there are a few, no more than 2, bugs.",The requirement is fully met.
+Colored terrain,5,The requirement is not met.,The requirements is only partially met or it is met but there are many bugs.,"The requirement is met but there are a few, no more than 2, bugs.",The requirement is fully met.
+Wireframe view,5,The requirement is not met.,The requirements is only partially met or it is met but there are many bugs.,"The requirement is met but there are a few, no more than 2, bugs.",The requirement is fully met.
+Flat shaded view,5,The requirement is not met.,The requirements is only partially met or it is met but there are many bugs.,"The requirement is met but there are a few, no more than 2, bugs.",The requirement is fully met.
+Smooth shaded view,5,The requirement is not met.,The requirements is only partially met or it is met but there are many bugs.,"The requirement is met but there are a few, no more than 2, bugs.",The requirement is fully met.
+Style,,,,,
+Code is consistently well documented.,5,There are no comments.,"There is an excess of comments, e.g. a comment per line, in at least some portions of the code.",Only some portions are well commented.,The code is not overly commented. Logical blocks of code are consistenly preceded by helpful comments.
+Code has a consistent and pleasing style.,5,The code is a random jumble of characters. I hope I never have to see anything like this ever again in my life.,,Only some portions of the code exhibit good style. Some lines are longer than 80 characters. Comments have a haphazard style.,"All variables have meaningful names. There is a consistent, pleasing style regarding whitespace, naming, braces, and comments. All lines are within 80 characters."
+Code consistently exhibits modularity.,5,The code contains one long init function.,,The code is occasionally divided into functions. Some functions are long.,"The code is modular - it consists of short, atomic functions. New functions are introduced and called to ensure modularity."
