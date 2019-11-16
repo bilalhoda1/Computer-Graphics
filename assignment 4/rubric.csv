@@ -1,0 +1,14 @@
+,,F - Unaccpetable,C - Satisfactory,B - Good,A - Excellent,Score,Comment
+Problem,Points,[0-60),[60-70),[70-85),[85-100],(out of 100),
+Correctness,,,,,,,
+Loading,15,There is no obvious way to specifiy the mesh file or the mesh does not load.,,The mesh loads but there are errors.,The mesh loads correctly using elements. It is centered in the view port and its longest dimension spans the viewport.,-,comment
+Rotation,6,There are no obvious instructions or controls to rotate the mesh.,,The mesh can be made to rotate but there are errors.,The mesh can be rotated slightly from its current orientation in clockwise and anti-clockwise directions about all 3 axes.,-,comment
+Shift,6,There are no obvious instructions or controls to shift the mesh.,,The mesh can be made to shift but there are errors.,The mesh can be shifted slightly from its current position in the positive and negative directions along all 3 axes.,-,comment
+Resize,6,There are no obvious instructions or controls to resize the mesh.,,The mesh can be resized but there are errors.,The mesh can be grown or shrunk relative to its current size in each of the 3 principal directions.,-,comment
+Reflection,6,There are no obvious instructions or controls to reflect the mesh.,,The mesh can be reflected but there are errors.,The mesh can be reflected about each axis.,-,comment
+Shear,6,There are no obvious instructions or controls to shear the mesh.,,The mesh can be sheared but there are errors.,The mesh can be sheared from its current position in the positive and negative direction along each of the axes.,-,comment
+Reset,5,There are no obvious instructions or controls to reset the mesh.,,The mesh can be reset but there are errors.,"The mesh can be reset to its original dimensions, position, and orientation.",-,comment
+Quality,,,,,,,
+Modularity,5,The code contains one long init function.,,The code is occasionally divided into functions. Some functions are long.,"The code is modular - it consists of short, atomic functions. New functions are introduced and called to ensure modularity.",-,comment
+Documentation,5,There are no comments.,"There is an excess of comments, e.g. a comment per line, in at least some portions of the code.",Only some portions are well commented.,The code is not overly commented. Logical blocks of code are consistenly preceded by helpful comments.,-,comment
+Style and Readability,5,The code is a random jumble of characters. I hope I never have to see anything like this ever again in my life.,,Only some portions of the code exhibit good style. Some lines are longer than 80 characters. Comments have a haphazard style.,"All variables have meaningful names. There is a consistent, pleasing style regarding whitespace, naming, braces, and comments. All lines are within 80 characters.",-,comment

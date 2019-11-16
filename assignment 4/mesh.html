@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+<html>
+<head>
+<title>Stanford Bunny</title>
+<script type="text/javascript" src="https://www.cs.unm.edu/~angel/BOOK/INTERACTIVE_COMPUTER_GRAPHICS/SEVENTH_EDITION/CODE/Common/webgl-utils.js"></script>
+<script type="text/javascript" src="https://www.cs.unm.edu/~angel/BOOK/INTERACTIVE_COMPUTER_GRAPHICS/SEVENTH_EDITION/CODE/Common/initShaders.js"></script>
+<script type="text/javascript" src="https://www.cs.unm.edu/~angel/BOOK/INTERACTIVE_COMPUTER_GRAPHICS/SEVENTH_EDITION/CODE/Common/MV.js"></script>
+<script type="text/javascript" src="mesh.js"></script>
+
+<script id="vertex-shader" type="x-shader/x-vertex">
+attribute vec3 vPosition;
+attribute vec4 vColor;
+varying vec4 fragColor;
+uniform mat4 u_scale;
+uniform mat4 u_translation;
+uniform mat4 u_shear;
+uniform vec3 theta; 
+uniform mat4 rx;
+uniform mat4 ry;
+uniform mat4 rz;
+void
+main()
+{
+	vec3 angle = radians(theta);
+			vec3 s = sin(angle);
+			vec3 c = cos(angle);
+		    mat4 rx = mat4( 1.0,  0.0,  0.0, 0.0,
+	    					0.0,  c.x,  s.x, 0.0,
+	    					0.0, -s.x,  c.x, 0.0,
+	    					0.0,  0.0,  0.0, 1.0 );
+			mat4 ry = mat4( c.y, 0.0, -s.y, 0.0,
+	    					0.0, 1.0,  0.0, 0.0,
+	    					s.y, 0.0,  c.y, 0.0,
+	    					0.0, 0.0,  0.0, 1.0 );
+			mat4 rz = mat4( c.z, s.z, 0.0, 0.0,
+	    					-s.z,  c.z, 0.0, 0.0,
+	    					0.0,  0.0, 1.0, 0.0,
+	    					0.0,  0.0, 0.0, 1.0 );
+    gl_Position = rz*ry*rx*vec4(vPosition,1) * u_scale * u_translation * u_shear;
+	gl_PointSize = 10.0;
+	fragColor = vColor;
+}
+</script>
+
+<script id="fragment-shader" type="x-shader/x-fragment">
+precision mediump float;
+varying vec4 fragColor;
+void
+main()
+{
+    gl_FragColor = fragColor;
+}
+</script>
+</head>
+
+<body>
+	<!--Canvas-->
+	<canvas id="gl-canvas" width="400" height="400" style="border: 1px solid grey;">
+	Oops ... your browser doesn't support the HTML5 canvas element
+	</canvas>
+	
+	<!--This is where the main thing is-->
+	<div>
+		<h1> Transformations </h1>
+		<p> Enter values in text boxes as float</p>
+	</div>
+
+	<!--For Scaling-->
+	<div>
+		<h4>Scaling</h4> 
+		x: <input type="text" id = "xScale" placeholder="0.0"> 
+		y:<input type="text" id = "yScale" placeholder="0.0"> 
+		z:<input type="text" id = "zScale" placeholder="0.0"> 
+		<button id = "scale" onclick="redraw(0)">Redraw</button>
+	</div>
+
+	<!--For Translation-->
+	<div>
+		<h4>Note: translation is restricted between 1 and -1</h4> 
+		x:<input type="text" id = "xTranslate" placeholder="0.0"> 
+		y:<input type="text" id = "yTranslate" placeholder="0.0"> 
+		z:<input type="text" id = "zTranslate" placeholder="0.0"> 
+		<button id = "translate" onclick="redraw(1)">Redraw</button>
+	</div>
+
+	<!--For Shearing along x-->
+	<div>
+		<h4>Shear along x-direction</h4>
+		y:<input type="text" id = "xy" placeholder="0.0"> 
+		z:<input type="text" id = "xz" placeholder="0.0">
+		<button id = "shearX" onclick="shearing(0)">Redraw</button>
+	</div>
+	
+	<!--For shearing along y-->
+	<div>
+		<h4>Shear along y-direction</h4>
+		x:<input type="text" id = "yx" placeholder="0.0"> 
+		z:<input type="text" id = "yz" placeholder="0.0">
+		<button id = "shearY" onclick="shearing(1)">Redraw</button>
+	</div>
+	
+	<!--For shearing along z-->
+	<div>
+	<h4>Shear along z-direction</h4>
+	x:<input type="text" id = "zx" placeholder="0.0"> 
+	y:<input type="text" id = "zy" placeholder="0.0">
+	<button id = "shearY" onclick="shearing(2)">Redraw</button>
+	</div>
+
+	<!--Rotations-->
+	<div>
+	<h4>Rotations</h4>
+	<button id = "xRotate" onclick="rotate(0)">Rotate along x</button>
+	<button id = "yRotate" onclick="rotate(1)">Rotate along y</button>
+	<button id = "zRotate" onclick="rotate(2)">Rotate along z</button>
+	<button id = "orientation" onclick="orientation()">Change orientation</button>
+	</div>
+	
+	<!--Reflections-->
+	<div>
+	<h4>Reflect</h4>
+	<button id = "xReflect" onclick="reflect(0)">Reflect at x</button>
+	<button id = "yReflect" onclick="reflect(1)">Reflect at y</button>
+	<button id = "zReflect" onclick="reflect(2)">Reflect at z</button>
+	<h4>Reset</h4>
+	<button id = "reset" onclick="reset()">Reset</button>
+	</div>
+
+</body>
+</html>
