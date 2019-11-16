@@ -1,0 +1,7 @@
+,,F - Unaccpetable,C - Satisfactory,B - Good,A - Excellent
+,Points,[0-60),[60-70),[70-85),[85-100]
+Sierpinski Triangle,20,The triangle does not display at all.,The triangle displays but there are problems in subdivision. An option to set the desired recursion level cannot be found easily.,,"The triangle displays correctly, the recursion level can be easily set."
+Circle,20,The circles do not display.,"The number of circles is hardcoded, only the last circle is rendered, all circles render on top of each other, or there are other problems in the rendering. An option to set the number of circles cannot be found easily.",,All the circles display correctly and their quantity can be varied easily.
+Maxwell's Triangle,5,The triangle does not display.,The trinagle displays but there are errors.,,The triangle displays correctly.
+Colorbars,20,The bars do not appear.,The colorbars appear but are buggy or use native interpolation.,There are other bugs with the bars or interpolation.,The bars are rendered correctly and the interpoaltion is done correctly.
+Mandelbrot,20,The set is not visualized.,The set is visualzied but has errors.,"The set is visualized, no alternate coloring scheme is proposed.","The set is visualzied correctly and an alternate, more descriptive coloring scheme is implemented."

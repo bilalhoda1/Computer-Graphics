@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+		<title> Color Bars</title>
+		<script type="text/javascript" src="https://www.cs.unm.edu/~angel/BOOK/INTERACTIVE_COMPUTER_GRAPHICS/SEVENTH_EDITION/CODE/Common/webgl-utils.js"></script>
+		<script type="text/javascript" src="https://www.cs.unm.edu/~angel/BOOK/INTERACTIVE_COMPUTER_GRAPHICS/SEVENTH_EDITION/CODE/Common/initShaders.js"></script>
+		<script type="text/javascript" src="https://www.cs.unm.edu/~angel/BOOK/INTERACTIVE_COMPUTER_GRAPHICS/SEVENTH_EDITION/CODE/Common/MV.js"></script>
+		<script type="text/javascript" src="colorbar.js"></script>
+
+		<!-- Here we add our shaders  and description of the page 
+		buttons etc will be here as well whereas its corresponding code will be in the app 
+		The shaders are programs that are compiled in the drivers
+		-->
+
+		<script id="vertex-shader" type="x-shader/x-vertex">
+		attribute vec4 vPosition;
+		attribute vec4 vColor;
+		varying vec4 fcolor;
+
+		void main()
+		{
+			gl_PointSize = 1.0;
+			gl_Position = vPosition;
+			fcolor = vColor;
+		}
+		</script>
+		<!-- Each execution of the fragment shader must output a color for the fragment unless the fragment is to be discarded -->
+
+		<script id="fragment-shader" type="x-shader/x-fragment"> 
+		precision mediump float;	
+		varying vec4 fcolor;
+
+		void main()
+		{
+			gl_FragColor = fcolor;
+		}
+		</script>
+	</head>
+
+	<body>
+		<!-- For this problem we create two seperate canvases for our ease-->
+		<canvas id="gl-canvas1" width="1000" height="150">    
+			<!-- The following message is displayed if the browser doesn’t -- support HTML5 --> 
+			Your web browser does not support HTML5’s canvas element.
+		</canvas>
+		
+		<canvas id="gl-canvas2" width="1000" height="150"> 
+			<!-- The following message is displayed if the browser doesn’t -- support HTML5 --> 
+			Your web browser does not support HTML5’s canvas element.
+		</canvas>
+	</body>
+	
+</html>

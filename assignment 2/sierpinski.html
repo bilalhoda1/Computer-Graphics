@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<!-- The shaders and the description of the page will be in this file (HTML) and the WebGL application code in a separate JavaScript ﬁle  (JS)-->
+<html>		<!-- Indicates the beginning of the HTML code -->
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+		<title> Relevant Title </title>
+		<script type="text/javascript" src="https://www.cs.unm.edu/~angel/BOOK/INTERACTIVE_COMPUTER_GRAPHICS/SEVENTH_EDITION/CODE/Common/webgl-utils.js"></script>	<!-- Contains utilities needed to create the WEBGL canvas object -->
+		<script type="text/javascript" src="https://www.cs.unm.edu/~angel/BOOK/INTERACTIVE_COMPUTER_GRAPHICS/SEVENTH_EDITION/CODE/Common/initShaders.js"></script> 	<!-- Contains the code to read, compile and link shaders -->
+		<script type="text/javascript" src="https://www.cs.unm.edu/~angel/BOOK/INTERACTIVE_COMPUTER_GRAPHICS/SEVENTH_EDITION/CODE/Common/MV.js"></script> 				<!-- For matrix/vector manipulation; Convenience -->
+		<script type="text/javascript" src="sierpinski.js"></script>
+
+
+
+		<!-- Here we add our shaders  and description of the page 
+		buttons etc will be here as well whereas its corresponding code will be in the app 
+		The shaders are programs that are compiled in the drivers
+		-->
+
+		<script id="vertex-shader" type="x-shader/x-vertex">
+		attribute vec4 vPosition;			// Attribute used to specify that the value is inputed to the shader from the application 
+
+		void main()
+		{
+			gl_PointSize = 1.0;			// Optional
+			
+			// The position must be outputed by every vertex shader 
+			gl_Position = vPosition;		//gl_Position is a built-in variable which is the position that is passed to the rasterizer 
+			
+		}
+		</script>
+
+
+		<!-- Each execution of the fragment shader must output a color for the fragment unless the fragment is to be discarded -->
+		<script id="fragment-shader" type="x-shader/x-fragment"> 
+		precision mediump float;		
+
+		void main()
+		{
+			gl_FragColor = vec4( 0, 0, 1.0, 1.0 );	// Assigns a 4-d RGBA color to each fragment using the built-in variable gl_FragColor
+		}
+		</script>
+	</head>
+
+
+
+	<body>
+		<!--  The canvas element provides the drawing surface for three-dimensional graphics 
+				applications using WebGL 
+				ID is whatever we will use to refer to it in the app --> 
+		<canvas id="gl-canvas" width="512" height="512"> 					<!-- gl-canvas is the identifier we use to refer to it in our application-->
+		<!-- The following message is displayed if the browser doesn’t -- support HTML5 --> 
+			Sorry; your web browser does not support HTML5’s canvas element.
+		</canvas>
+	</body>
+</html>

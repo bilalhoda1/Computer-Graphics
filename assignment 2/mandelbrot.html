@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script id="vertex-shader" type="x-shader/x-vertex">
+attribute vec4 vPosition;
+attribute vec4 vColour;
+varying vec4 pointColor;
+
+void
+main()
+{
+    gl_Position = vPosition;
+    gl_PointSize = 10.0;
+	pointColor = vColour;
+}
+</script>
+
+<script id="fragment-shader" type="x-shader/x-fragment">
+precision mediump float;
+varying vec4 pointColor;
+
+void
+main()
+{
+    gl_FragColor = pointColor;
+}
+</script>
+
+<script type="text/javascript" src="https://www.cs.unm.edu/~angel/BOOK/INTERACTIVE_COMPUTER_GRAPHICS/SEVENTH_EDITION/CODE/Common/webgl-utils.js"></script>
+<script type="text/javascript" src="https://www.cs.unm.edu/~angel/BOOK/INTERACTIVE_COMPUTER_GRAPHICS/SEVENTH_EDITION/CODE/Common/initShaders.js"></script>
+<script type="text/javascript" src="https://www.cs.unm.edu/~angel/BOOK/INTERACTIVE_COMPUTER_GRAPHICS/SEVENTH_EDITION/CODE/Common/MV.js"></script>
+<script type="text/javascript" src="mandelbrot.js"></script>
+</head>
+
+<body>
+<canvas id="gl-canvas" width="640" height="480">
+Oops ... your browser doesn't support the HTML5 canvas element
+</canvas>
+</body>
+</html>
