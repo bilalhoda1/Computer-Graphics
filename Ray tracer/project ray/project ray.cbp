@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="project ray" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/project ray" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/project ray" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="../BRDF/BRDF.hpp" />
+		<Unit filename="../BRDF/GlossySpecular.cpp" />
+		<Unit filename="../BRDF/GlossySpecular.hpp" />
+		<Unit filename="../BRDF/Lambertian.cpp" />
+		<Unit filename="../BRDF/Lambertian.hpp" />
+		<Unit filename="../BRDF/PerfectSpecular.cpp" />
+		<Unit filename="../BRDF/PerfectSpecular.hpp" />
+		<Unit filename="../acceleration/Acceleration.h" />
+		<Unit filename="../acceleration/BVH.cpp" />
+		<Unit filename="../acceleration/BVH.h" />
+		<Unit filename="../build/build_scene.cpp" />
+		<Unit filename="../cameras/Camera.hpp" />
+		<Unit filename="../cameras/Parallel.cpp" />
+		<Unit filename="../cameras/Parallel.hpp" />
+		<Unit filename="../cameras/Perspective.cpp" />
+		<Unit filename="../cameras/Perspective.hpp" />
+		<Unit filename="../geometry/Geometry.cpp" />
+		<Unit filename="../geometry/Geometry.hpp" />
+		<Unit filename="../geometry/Plane.cpp" />
+		<Unit filename="../geometry/Plane.hpp" />
+		<Unit filename="../geometry/Sphere.cpp" />
+		<Unit filename="../geometry/Sphere.hpp" />
+		<Unit filename="../geometry/Triangle.cpp" />
+		<Unit filename="../geometry/Triangle.hpp" />
+		<Unit filename="../happly/happly.h" />
+		<Unit filename="../lights/Ambient.cpp" />
+		<Unit filename="../lights/Ambient.hpp" />
+		<Unit filename="../lights/Directional.cpp" />
+		<Unit filename="../lights/Directional.hpp" />
+		<Unit filename="../lights/Light.cpp" />
+		<Unit filename="../lights/Light.hpp" />
+		<Unit filename="../lights/Point.cpp" />
+		<Unit filename="../lights/Point.hpp" />
+		<Unit filename="../lights/Spotlight.cpp" />
+		<Unit filename="../lights/Spotlight.hpp" />
+		<Unit filename="../materials/Cosine.cpp" />
+		<Unit filename="../materials/Cosine.hpp" />
+		<Unit filename="../materials/Material.hpp" />
+		<Unit filename="../materials/Matte.cpp" />
+		<Unit filename="../materials/Matte.h" />
+		<Unit filename="../materials/Phong.cpp" />
+		<Unit filename="../materials/Phong.hpp" />
+		<Unit filename="../materials/Reflective.cpp" />
+		<Unit filename="../materials/Reflective.hpp" />
+		<Unit filename="../samplers/Random.cpp" />
+		<Unit filename="../samplers/Random.h" />
+		<Unit filename="../samplers/Regular.cpp" />
+		<Unit filename="../samplers/Regular.hpp" />
+		<Unit filename="../samplers/Sampler.cpp" />
+		<Unit filename="../samplers/Sampler.hpp" />
+		<Unit filename="../samplers/Simple.cpp" />
+		<Unit filename="../samplers/Simple.hpp" />
+		<Unit filename="../tracer/Basic.cpp" />
+		<Unit filename="../tracer/Basic.h" />
+		<Unit filename="../tracer/Tracer.cpp" />
+		<Unit filename="../tracer/Tracer.h" />
+		<Unit filename="../tracer/Whitted.cpp" />
+		<Unit filename="../tracer/Whitted.hpp" />
+		<Unit filename="../utilities/BBox.cpp" />
+		<Unit filename="../utilities/BBox.hpp" />
+		<Unit filename="../utilities/Constants.hpp" />
+		<Unit filename="../utilities/Image.cpp" />
+		<Unit filename="../utilities/Image.hpp" />
+		<Unit filename="../utilities/Point3D.cpp" />
+		<Unit filename="../utilities/Point3D.hpp" />
+		<Unit filename="../utilities/RGBColor.cpp" />
+		<Unit filename="../utilities/RGBColor.hpp" />
+		<Unit filename="../utilities/Ray.cpp" />
+		<Unit filename="../utilities/Ray.hpp" />
+		<Unit filename="../utilities/ShadeInfo.cpp" />
+		<Unit filename="../utilities/ShadeInfo.hpp" />
+		<Unit filename="../utilities/Vector3D.cpp" />
+		<Unit filename="../utilities/Vector3D.hpp" />
+		<Unit filename="../world/ViewPlane.cpp" />
+		<Unit filename="../world/ViewPlane.hpp" />
+		<Unit filename="../world/World.cpp" />
+		<Unit filename="../world/World.hpp" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

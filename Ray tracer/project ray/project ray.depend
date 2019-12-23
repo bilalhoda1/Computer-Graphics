@@ -1,0 +1,379 @@
+# depslib dependency file v1.0
+1576627582 source:c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\acceleration\bvh.cpp
+	"BVH.h"
+	<iostream>
+	"../geometry/Geometry.hpp"
+	"../utilities/ShadeInfo.hpp"
+	"../world/World.hpp"
+
+1576627582 c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\acceleration\bvh.h
+	"Acceleration.h"
+	"../utilities/BBox.hpp"
+
+1576627582 c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\acceleration\acceleration.h
+	<vector>
+
+1576627582 c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\utilities\bbox.hpp
+	"Point3D.hpp"
+	"Vector3D.hpp"
+
+1576627582 c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\utilities\point3d.hpp
+	<string>
+
+1576627582 c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\utilities\vector3d.hpp
+	<string>
+
+1576627582 c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\geometry\geometry.hpp
+	<string>
+
+1576627582 c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\utilities\shadeinfo.hpp
+	<cstdlib>
+	"Constants.hpp"
+	"Point3D.hpp"
+	"Ray.hpp"
+	"Vector3D.hpp"
+
+1576627582 c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\utilities\constants.hpp
+	<cstdlib>
+	"RGBColor.hpp"
+
+1576627582 c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\utilities\rgbcolor.hpp
+	<string>
+
+1576627582 c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\utilities\ray.hpp
+	"Point3D.hpp"
+	"Vector3D.hpp"
+
+1576627582 c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\world\world.hpp
+	<vector>
+	"../utilities/RGBColor.hpp"
+	"ViewPlane.hpp"
+
+1576627582 c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\world\viewplane.hpp
+	"../utilities/Point3D.hpp"
+	"../utilities/Vector3D.hpp"
+
+1576627582 source:c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\brdf\glossyspecular.cpp
+	"GlossySpecular.hpp"
+	"../utilities/Point3D.hpp"
+
+1576627582 c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\brdf\glossyspecular.hpp
+	"BRDF.hpp"
+
+1576627582 c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\brdf\brdf.hpp
+	<math.h>
+	<random>
+	"../utilities/Constants.hpp"
+	"../utilities/RGBColor.hpp"
+	"../utilities/ShadeInfo.hpp"
+	"../utilities/Vector3D.hpp"
+
+1576627582 source:c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\brdf\lambertian.cpp
+	"Lambertian.hpp"
+	"../utilities/Point3D.hpp"
+
+1576627582 c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\brdf\lambertian.hpp
+	"BRDF.hpp"
+
+1576627582 source:c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\brdf\perfectspecular.cpp
+	"PerfectSpecular.hpp"
+
+1576627582 c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\brdf\perfectspecular.hpp
+	"BRDF.hpp"
+
+1576627582 source:c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\cameras\parallel.cpp
+	"Parallel.hpp"
+
+1576627582 c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\cameras\parallel.hpp
+	"Camera.hpp"
+	"../utilities/Vector3D.hpp"
+
+1576627582 c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\cameras\camera.hpp
+
+1576627582 source:c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\cameras\perspective.cpp
+	<iostream>
+	"../utilities/Vector3D.hpp"
+	"Perspective.hpp"
+
+1576627582 c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\cameras\perspective.hpp
+	"Camera.hpp"
+	"../utilities/Point3D.hpp"
+
+1576627582 source:c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\geometry\geometry.cpp
+	"../materials/Material.hpp"
+	"Geometry.hpp"
+
+1576627582 c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\materials\material.hpp
+
+1576627582 source:c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\geometry\plane.cpp
+	<sstream>
+	"../utilities/Ray.hpp"
+	"../utilities/Constants.hpp"
+	"../utilities/ShadeInfo.hpp"
+	"../utilities/BBox.hpp"
+	"Plane.hpp"
+
+1576627582 c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\geometry\plane.hpp
+	"Geometry.hpp"
+	"../utilities/Point3D.hpp"
+	"../utilities/Vector3D.hpp"
+
+1576627582 source:c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\geometry\sphere.cpp
+	<cmath>
+	<sstream>
+	<iostream>
+	"../utilities/Ray.hpp"
+	"../utilities/ShadeInfo.hpp"
+	"../utilities/BBox.hpp"
+	"Sphere.hpp"
+
+1576627582 c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\geometry\sphere.hpp
+	"Geometry.hpp"
+	"../utilities/Point3D.hpp"
+
+1576627582 source:c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\geometry\triangle.cpp
+	<sstream>
+	"../utilities/Ray.hpp"
+	"../utilities/ShadeInfo.hpp"
+	"../utilities/BBox.hpp"
+	"Triangle.hpp"
+
+1576627582 c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\geometry\triangle.hpp
+	"Geometry.hpp"
+	"../utilities/Point3D.hpp"
+
+1576627582 source:c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\lights\ambient.cpp
+	"Ambient.hpp"
+	"../utilities/Vector3D.hpp"
+	"../world/World.hpp"
+
+1576627582 c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\lights\ambient.hpp
+	"../utilities/ShadeInfo.hpp"
+	"Light.hpp"
+
+1576627582 c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\lights\light.hpp
+	"../utilities/RGBColor.hpp"
+
+1576627582 source:c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\lights\directional.cpp
+	"Directional.hpp"
+	"../world/World.hpp"
+	"../geometry/Geometry.hpp"
+
+1576627582 c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\lights\directional.hpp
+	"../utilities/Vector3D.hpp"
+	"../utilities/ShadeInfo.hpp"
+	"Light.hpp"
+
+1576627582 source:c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\lights\light.cpp
+	"Light.hpp"
+
+1576627582 source:c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\lights\point.cpp
+	"Point.hpp"
+	"../utilities/Vector3D.hpp"
+	"../world/World.hpp"
+	"../geometry/Geometry.hpp"
+
+1576627582 c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\lights\point.hpp
+	"../utilities/Point3D.hpp"
+	"../utilities/ShadeInfo.hpp"
+	"Light.hpp"
+
+1576627582 source:c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\lights\spotlight.cpp
+	"Spotlight.hpp"
+	<math.h>
+
+1576627582 c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\lights\spotlight.hpp
+	"../utilities/Vector3D.hpp"
+	"Point.hpp"
+
+1576627582 source:c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\materials\cosine.cpp
+	<iostream>
+	"../utilities/Vector3D.hpp"
+	"../utilities/ShadeInfo.hpp"
+	"Cosine.hpp"
+
+1576627582 c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\materials\cosine.hpp
+	"Material.hpp"
+	"../utilities/RGBColor.hpp"
+
+1576627582 source:c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\materials\matte.cpp
+	"Matte.h"
+	"../BRDF/Lambertian.hpp"
+	"../world/World.hpp"
+	"../lights/Light.hpp"
+
+1576627582 c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\materials\matte.h
+	"Material.hpp"
+
+1576627582 source:c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\materials\phong.cpp
+	"Phong.hpp"
+	"../BRDF/GlossySpecular.hpp"
+	"../BRDF/Lambertian.hpp"
+	"../lights/Light.hpp"
+	"../world/World.hpp"
+
+1576627582 c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\materials\phong.hpp
+	"Material.hpp"
+
+1576627582 source:c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\materials\reflective.cpp
+	"Reflective.hpp"
+	<iostream>
+	"../BRDF/PerfectSpecular.hpp"
+	"../lights/Light.hpp"
+	"../tracer/Tracer.h"
+	"../world/World.hpp"
+
+1576627582 c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\materials\reflective.hpp
+	"Phong.hpp"
+
+1576627582 c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\tracer\tracer.h
+
+1576627582 source:c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\samplers\random.cpp
+	"Random.h"
+	"../utilities/Ray.hpp"
+	"../cameras/Camera.hpp"
+	"../world/ViewPlane.hpp"
+	"../utilities/Constants.hpp"
+
+1576627582 c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\samplers\random.h
+	"Sampler.hpp"
+
+1576627582 c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\samplers\sampler.hpp
+	<vector>
+
+1576627582 source:c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\samplers\regular.cpp
+	"Regular.hpp"
+	"../utilities/Ray.hpp"
+	"../cameras/Camera.hpp"
+	"../world/ViewPlane.hpp"
+	<cmath>
+
+1576627582 c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\samplers\regular.hpp
+	"Sampler.hpp"
+
+1576627582 source:c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\samplers\sampler.cpp
+	"Sampler.hpp"
+
+1576627582 source:c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\samplers\simple.cpp
+	<iostream>
+	"../utilities/Ray.hpp"
+	"../cameras/Camera.hpp"
+	"../world/ViewPlane.hpp"
+	"Simple.hpp"
+
+1576627582 c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\samplers\simple.hpp
+	"Sampler.hpp"
+
+1576627582 source:c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\tracer\basic.cpp
+	"Basic.h"
+	"../utilities/Ray.hpp"
+	"../utilities/ShadeInfo.hpp"
+	"../world/World.hpp"
+	"../materials/Material.hpp"
+
+1576627582 c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\tracer\basic.h
+	"Tracer.h"
+
+1576627582 source:c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\tracer\tracer.cpp
+	"Tracer.h"
+	"../utilities/Constants.hpp"
+	"../utilities/Ray.hpp"
+
+1576627582 source:c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\tracer\whitted.cpp
+	"Whitted.hpp"
+	<iostream>
+	"../world/World.hpp"
+	"../utilities/ShadeInfo.hpp"
+	"../materials/Material.hpp"
+
+1576627582 c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\tracer\whitted.hpp
+	"Tracer.h"
+
+1576627582 source:c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\utilities\bbox.cpp
+	<sstream>
+	<iostream>
+	"../geometry/Geometry.hpp"
+	"Constants.hpp"
+	"Point3D.hpp"
+	"Ray.hpp"
+	"BBox.hpp"
+	"Vector3D.hpp"
+
+1576627582 source:c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\utilities\image.cpp
+	<fstream>
+	<iostream>
+	"../world/ViewPlane.hpp"
+	"RGBColor.hpp"
+	"Image.hpp"
+
+1576627582 c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\utilities\image.hpp
+	<string>
+
+1576627582 source:c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\utilities\point3d.cpp
+	<cmath>
+	<sstream>
+	"Vector3D.hpp"
+	"Point3D.hpp"
+
+1576627582 source:c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\utilities\ray.cpp
+	<sstream>
+	"Ray.hpp"
+
+1576627582 source:c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\utilities\rgbcolor.cpp
+	<cmath>
+	<sstream>
+	"RGBColor.hpp"
+
+1576627582 source:c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\utilities\shadeinfo.cpp
+	"ShadeInfo.hpp"
+	"../utilities/Constants.hpp"
+
+1576627582 source:c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\utilities\vector3d.cpp
+	<cmath>
+	<sstream>
+	"Point3D.hpp"
+	"Vector3D.hpp"
+
+1576627582 source:c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\world\viewplane.cpp
+	"ViewPlane.hpp"
+
+1576627582 source:c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\world\world.cpp
+	<iostream>
+	<string>
+	"../utilities/BBox.hpp"
+	"../geometry/Geometry.hpp"
+	"../geometry/Triangle.hpp"
+	"../utilities/ShadeInfo.hpp"
+	"../acceleration/Acceleration.h"
+	"../tracer/Tracer.h"
+	"../lights/Ambient.hpp"
+	"../samplers/Sampler.hpp"
+	"../cameras/Camera.hpp"
+	"../happly/happly.h"
+	"World.hpp"
+
+1576627582 c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\happly\happly.h
+	<array>
+	<cctype>
+	<fstream>
+	<iostream>
+	<limits>
+	<memory>
+	<sstream>
+	<string>
+	<type_traits>
+	<vector>
+
+1576674642 source:c:\users\syed bilal hoda\desktop\cs440-fall19-proj-ii-the-steel-terrors-master\project ray\project ray\main.cpp
+	<iostream>
+	"../materials/Cosine.hpp"
+	"../samplers/Sampler.hpp"
+	"../utilities/Image.hpp"
+	"../utilities/RGBColor.hpp"
+	"../utilities/Ray.hpp"
+	"../utilities/ShadeInfo.hpp"
+	"../acceleration/BVH.h"
+	"../tracer/Tracer.h"
+	"../world/World.hpp"
+	"../world/ViewPlane.hpp"
+
